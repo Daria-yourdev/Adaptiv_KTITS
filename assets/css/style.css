@@ -19,7 +19,7 @@
     src: url(../media/fonts/Manrope-VariableFont_wght.ttf);
 }
 
-/* header */
+/* header start */
 header {
     padding: 20px 0;
     border: #F1F1F3 1px solid;
@@ -30,12 +30,12 @@ header {
     justify-content: space-between;
 }
 
-.header-left_buttons {
+.h-left {
     display: flex;
     gap: 10px;
 }
 
-.header-left_buttons a,
+.h-left a,
 .sup-btn {
     display: flex;
     justify-content: center;
@@ -49,20 +49,27 @@ header {
     border: 1px solid transparent;
 }
 
+.h-left a:hover,
+.sup-btn:hover {
+    background-color: #fff;
+    border: 1px solid #F1F1F3;
+    color: #656567;
+}
+
 .logo a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-right {
+.h-right {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 14px;
 }
 
-.cart-button {
+.cart-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,11 +80,18 @@ header {
     border: 1px solid transparent;
 }
 
+.cart-btn:hover {
+    background-color: white;
+    border: 1px solid #FFD400;
+}
+
 .burger {
     display: none;
 }
 
-/* banner */
+/* header end */
+
+/* banner start */
 .banner {
     margin-top: 100px;
     display: flex;
@@ -191,7 +205,9 @@ header {
     text-transform: capitalize;
 }
 
-/* catalog */
+/* banner end */
+
+/* catalog start */
 
 .catalog {
     margin-top: 200px;
@@ -252,6 +268,11 @@ header {
     background-color: white;
     border: 1px solid #F1F1F3;
     border-radius: 32px;
+}
+
+.cf-right a:hover {
+    color: white;
+    background-color: #262626;
 }
 
 .catalog-cards {
@@ -337,7 +358,9 @@ header {
     background-color: #262626;
 }
 
-/* about */
+/* catalog end */
+
+/* about start */
 .about {
     margin-top: 200px;
     display: flex;
@@ -398,7 +421,9 @@ header {
     font-weight: 500;
 }
 
-/* reviews */
+/* about end */
+
+/* reviews start */
 .reviews {
     margin-top: 200px;
     display: flex;
@@ -508,7 +533,9 @@ header {
     background-color: #FCFCFD;
 }
 
-/* faq */
+/* reviews end */
+
+/* faq start */
 .faq {
     margin-top: 200px;
     display: flex;
@@ -519,6 +546,8 @@ header {
 .faq .blt-left {
     max-width: 764px;
 }
+
+/* faq end */
 
 .details-columns {
     display: flex;
@@ -552,6 +581,10 @@ details summary p {
     font-size: 18px;
     color: #262626;
     font-weight: 500;
+}
+
+details summary img:hover {
+    cursor: pointer;
 }
 
 details p {
@@ -611,7 +644,7 @@ details p {
     gap: 10px;
 }
 
-/* footer */
+/* footer start */
 
 footer {
     margin-top: 150px;
@@ -663,6 +696,10 @@ form button {
     font-size: 18px;
     border: 0;
     font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .ft-right {
@@ -749,6 +786,8 @@ nav {
     align-items: center;
 }
 
+/* footer end */
+
 .scroller {
     display: none;
 }
@@ -758,13 +797,13 @@ nav {
         max-width: 1280px;
     }
 
-    /* header */
-    .header-left_buttons {
+    /* header start */
+    .h-left {
         display: flex;
         gap: 10px;
     }
 
-    .header-left_buttons a {
+    .h-left a {
         padding: 12px 20px;
         font-size: 14px;
     }
@@ -787,17 +826,17 @@ nav {
         width: 40px;
     }
 
-    .header-right {
+    .h-right {
         display: flex;
         gap: 10px;
     }
 
-    .cart-button {
+    .cart-btn {
         width: 44px;
         height: 44px;
     }
 
-    .cart-button img {
+    .cart-btn img {
         width: 20px;
     }
 
@@ -808,7 +847,9 @@ nav {
         font-size: 14px;
     }
 
-    /* banner */
+    /* header end */
+
+    /* banner start */
     .b-left {
         display: flex;
         flex-direction: column;
@@ -898,7 +939,9 @@ nav {
         font-size: 16px;
     }
 
-    /* catalog */
+    /* banner end */
+
+    /* catalog start */
     .catalog {
         gap: 60px;
     }
@@ -983,7 +1026,9 @@ nav {
         width: 24px;
     }
 
-    /* about */
+    /* catalog end */
+
+    /* about start */
     .about {
         margin-top: 150px;
     }
@@ -1020,7 +1065,9 @@ nav {
         font-size: 14px;
     }
 
-    /* reviews */
+    /* about end */
+
+    /* reviews start */
 
     .reviews {
         margin-top: 150px;
@@ -1088,7 +1135,9 @@ nav {
         right: 0px;
     }
 
-    /* faq */
+    /* reviews end */
+
+    /* faq start */
     .faq {
         margin-top: 150px;
         gap: 60px;
@@ -1116,7 +1165,9 @@ nav {
         font-size: 14px;
     }
 
-    /* how */
+    /* faq end */
+
+    /* how start */
     .how {
         gap: 50px;
     }
@@ -1151,7 +1202,9 @@ nav {
         font-size: 14px;
     }
 
-    /* footer */
+    /* how end */
+
+    /* footer start */
     footer {
         margin-top: 100px;
     }
@@ -1230,6 +1283,8 @@ nav {
     .fbc-right {
         font-size: 14px;
     }
+
+    /* footer end */
 }
 
 @media (max-width: 391px) {
@@ -1237,8 +1292,8 @@ nav {
         width: 358px;
     }
 
-    /* header */
-    .header-left_buttons a:not(.burger),
+    /* Header */
+    .h-left a:not(.burger),
     .sup-btn {
         display: none;
     }
@@ -1256,7 +1311,7 @@ nav {
         gap: 10px;
     }
 
-    .header-right {
+    .h-right {
         margin-left: auto;
         display: flex;
         gap: 10px;
@@ -1270,7 +1325,7 @@ nav {
         margin-right: auto;
     }
 
-    .cart-button {
+    .cart-btn {
         width: 40px;
         height: 40px;
     }
@@ -1279,7 +1334,7 @@ nav {
         display: block;
     }
 
-    /* banner */
+    /* banner start */
     .banner {
         margin-top: 40px;
         gap: 40px;
@@ -1351,7 +1406,9 @@ nav {
         font-size: 14px;
     }
 
-    /* catalog */
+    /* banner end */
+
+    /* Catalog */
     .catalog-card:not(:nth-child(3)) {
         display: none;
     }
@@ -1404,7 +1461,7 @@ nav {
         font-size: 16px;
     }
 
-    /* about */
+    /* About */
 
     .about {
         margin-top: 80px;
@@ -1457,7 +1514,7 @@ nav {
         text-decoration: none;
     }
 
-    /* reviews */
+    /* Reviews */
     .review-card:not(:first-child) {
         display: none;
     }
@@ -1580,7 +1637,7 @@ nav {
         width: 215px;
     }
 
-    /* footer */
+    /* Footer */
     footer {
         margin-top: 80px;
     }
